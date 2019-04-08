@@ -1,0 +1,51 @@
+claim:
+  vertexpand:
+    enabled: false
+  blocklimits:
+    enabled: true
+    limits:
+      default: 200000
+      user: 200000
+      vip: 300000
+      premium: 300000
+      deluxe: 600000
+      epic: 600000
+regionprotect:
+  flow:
+    lava:
+      enabled: false
+    water:
+      enabled: false
+    otherliquid:
+      enabled: false
+  ignitebyplayer:
+    enabled: false
+  fire:
+    spread:
+      toregion:
+        enabled: false
+      inregion:
+        enabled: false
+    burn:
+      enabled: false
+  explosion:
+    block:
+      enabled: true
+    entity:
+      enabled: false
+  pistonmove:
+    enabled: false
+autoflags:
+  enabled: false
+  flags: {}
+restrictcommands:
+  enabled: true
+  commands:
+  - warp set
+  - warp pcreate
+  - warp pset
+  - sethome
+  - warp create
+  - home set
+extendedwewand:
+  enabled: false

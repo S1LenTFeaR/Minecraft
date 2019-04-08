@@ -1,0 +1,142 @@
+groups:
+  User:
+    default: true
+    prefix: ' &7[Работяга] &f'
+    permissions:
+    - bukkit.command.tps
+    - essentials.chat.shout
+    - fe.balance
+    - fe.balance.other
+    - fe.send
+    - fe.top
+    - ChestShop.shop.buy
+    - ChestShop.shop.sell
+    - ChestShop.shop.create
+    - essentials.pay
+    - essentials.signs.use.*
+    - essentials.afk
+    - essentials.ignore
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.msg
+    - essentials.msg.*
+    - essentials.warp.list
+    - essentials.warp
+    - essentials.warps.mining
+    - essentials.kit
+    - essentials.kits.wand
+    - essentials.spawn
+    - essentials.sethome
+    - essentials.home
+    - essentials.back
+    - essentials.back.ondeath
+    - worldguard.region.list.own
+    - worldguard.region.claim
+    - worldguard.region.addowner.own.*
+    - worldguard.region.removeowner.own.*
+    - worldguard.region.addmember.own.*
+    - worldguard.region.removemember.own.*
+    - worldguard.region.remove.own.*
+    - worldguard.region.wand
+    - worldguard.region.remove.member.*
+    - worldguard.region.info.own.*
+    - worldguard.region.info.member
+    - worldguard.region.select.own.*
+    - worldguard.region.select.member.*
+    - worldguard.region.flag.regions.own.*
+    - worldedit.selection.hpos
+    - worldedit.selection.pos
+    - worldedit.wand
+    - worldedit.selection.expand
+    - worldedit.selection.shift
+    - worldedit.selection.contract
+    - worldguard.region.flag.flags.chest-access.*
+    - worldguard.region.flag.flags.use.*
+    - worldguard.region.flag.flags.pvp.*
+    - worldguard.region.flag.flags.potion-splash.*
+    - worldguard.region.flag.flags.lightning.*
+    - worldguard.region.flag.flags.lighter.*
+    - worldguard.region.flag.flags.vehicle-destroy.*
+    - worldguard.region.flag.flags.vehicle-place.*
+    - worldguard.region.flag.flags.pistons.*
+    - regionforsale.rent
+    - mywarp.cmd.to
+  vip:
+    inheritance:
+    - User
+    prefix: ' &6[Донатер] &f'
+    permissions:
+    - worldguard.region.flag.flags.ice-form.*
+    - worldguard.region.flag.flags.ice-melt.*
+    - worldguard.region.flag.flags.snow-fall.*
+    - worldguard.region.flag.flags.leaf-decay.*
+    - worldguard.region.flag.flags.ghast-fireball.*
+    - worldguard.region.flag.flags.creeper-explosion.*
+    - essentials.clearinventory
+    - essentials.kits.ironarmor
+    - essentials.kits.irontools
+    - essentials.joinfullserver
+    - essentials.nocommandcost.back
+    - essentials.nocommandcost.return
+  premium:
+    inheritance:
+    - vip
+    prefix: ' &6[Элита] &f'
+    permissions:
+    - worldguard.region.flag.flags.mob-spawning.*
+    - worldguard.region.flag.flags.deny-spawn.*
+    - worldguard.region.flag.flags.mob-damage.*
+    - worldguard.region.flag.flags.teleport.*
+    - worldguard.region.flag.flags.item-drop.*
+    - worldguard.region.flag.flags.lava-fire.*
+    - worldguard.region.teleport.*
+    - essentials.heal
+    - essentials.feed
+    - essentials.ext
+    - essentials.kits.diamondarmor
+    - essentials.kits.diamondtools
+    - essentials.afk.kickexempt
+    - keepitems.keep
+    - essentials.kits.donate
+    - mywarp.cmd.create-public
+    - mywarp.cmd.create-private
+    - mywarp.cmd.welcome
+    - mywarp.cmd.delete
+    - mywarp.cmd.list
+    - mywarp.cmd.info
+    - mywarp.cmd.update
+    - mywarp.cmd.help
+    - mywarp.cmd.point
+    - mywarp.cmd.give
+    - mywarp.cmd.invite
+    - mywarp.cmd.uninvite
+    - mywarp.cmd.public
+    - mywarp.cmd.private
+  deluxe:
+    inheritance:
+    - premium
+    prefix: ' &6[Бизнесмен] &f'
+    permissions:
+    - worldguard.region.flag.flags.invincible.*
+    - worldguard.region.flag.flags.feed-max-hunger.*
+    - worldguard.region.flag.flags.feed-min-hunger.*
+    - worldguard.region.flag.flags.heal-amount.*
+    - worldguard.region.flag.flags.heal-delay.*
+    - worldguard.region.flag.flags.water-flow.*
+    - worldguard.region.flag.flags.lava-flow.*
+    - keepitems.keepxp
+    - essentials.god
+    - essentials.fly
+    - essentials.tppos
+    - essentials.repair
+    - essentials.kits.deluxe
+  Admin:
+    inheritance:
+    - premium
+    prefix: ' &4[Админ] &f'
+    permissions:
+    - '*'
+users:
+  Attelis:
+    group:
+    - Admin

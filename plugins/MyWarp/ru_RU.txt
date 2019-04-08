@@ -1,0 +1,124 @@
+#Русский перевод для MyWarp by dimahru (Специально для rubukkit.org) 
+cmd.description.accept:Принять warp, который был вам дан другим игроком
+cmd.description.adminWarpTo:Телепортировать игрока §7<player>§f на warp §7<name>§f если у вас есть права, чтобы посетить его.
+cmd.description.create:Создать новый общественный warp, с названием  §7<name>§f на вашей текущей позиции
+cmd.description.createPrivate:Создать новый warp, с названием §7<name>§f на вашей текущей позиции
+cmd.description.delete:Удалить warp §7<name>
+cmd.description.give:Дать warp §7<name>§f игроку §7<player>§f. Используйте [-D], чтобы дать непосредственно [-F], чтобы игнорировать ограничения (если включены).
+cmd.description.help:Отображает меню помощи
+cmd.description.import:Импорт warp'ов из §7<SQLite|MySQL>§f в текущую базу данных. Существующие warp'ы не будут перезаписаны, если [-F] не используется.
+cmd.description.info:Дает вам все доступные сведения о §7<name>
+cmd.description.invite:Выдать приглашение §7<player|group>§f на §7<name>
+cmd.description.list:Список варпов, которые вы можете посетить. Используйте [-c creator] для списка warp'ов определённого игрока и [-w world] для списка warp'ов в определённом мире. Если warp'ы должны быть перечислены по популярности, используйте [-p].
+cmd.description.listAll:Список варпов, которые вы можете посетить на одной странице. Используйте [-c creator] для списка warp'ов определённого игрока и [-w world] для списка warp'ов в определённом мире. Если warp'ы должны быть перечислены по популярности, используйте [-p].
+cmd.description.point:Ориентировать ваш компас на §7[name]§f. Если вы хотите сбросить компас, используйте эту команду без указания warp'a.
+cmd.description.private:Сделать §7<name>§f персональным warp'ом
+cmd.description.public:Сделать §7<name>§f публичным warp'ом
+cmd.description.reload:Перезагрузка конфигурации
+cmd.description.search:Поиски warp'ов при данном §7<name>§f. Используйте [-p] если warp'ы должны быть перечислены по популярности.
+cmd.description.uninvite:Забрать приглашение у §7<player|group>§f на §7<name>
+cmd.description.update:Обновление §7<name>§f на вашу текущую позицию
+cmd.description.warpTo:Телепортируйтесь к §7<name>§f если у вас есть права, чтобы посетить его.
+cmd.description.welcome:Измените приветственное сообщение §7<name>§f. После, вас попросят ввести приветствие.
+cmd.usage.creator:создатель
+cmd.usage.group:группа
+cmd.usage.name:имя
+cmd.usage.player:игрок
+cmd.usage.world:мир
+dynmap.marker:<b>%warp%</b></br><i>Создан игроком %creator%</i>
+economy.transaction.complete:§bВам были переданы %amount%$.
+error.accept.noWarp:Нету варпов для подтверждения.
+error.cmd.flagGiven:Значение флагу '%flag%' уже дано!
+error.cmd.invalidNumber:Вы должны ввести правильный номер. Используйте §f/%command% ?§c для более детальной информации.
+error.cmd.invalidSender:Не удалось выполнить команду: неверный отправитель.
+error.cmd.noValue:Нет значения, указанного для флага '%flag%'.
+error.cmd.toFewArgs:Слишком мало аргументов.
+error.cmd.toManyArgs:Слишком много аргументов.
+error.cmd.unknown:Произошла ошибка при выполнении этой команды.
+error.cmd.unknownFlag:Неизвестный флаг:
+error.create.warpExists:Warp, под названием '§f%warp%§r' уже существует.
+error.economy.cannotAfford:Вы не можете себе этого позволить. Вам потребуется минимум %amount%$.
+error.economy.unknown:Транзакция не завершена.
+error.give.isOwner:%player% уже является владельцем.
+error.import.exists:Warp '%warp%' уже существует. Пропускаю...
+error.import.invalid:%query% не является валидной опцией импорта.
+error.import.noConnection:Не удалось установить соединение с базой данных для импорта warp'ов:
+error.invite.creator:%player% является создателем, конечно он имеет приглашение.
+error.invite.invited.group:Группа '%group%' уже имеет приглашение на этот warp.
+error.invite.invited.player:%player% уже имеет приглашение на этот warp.
+error.noPermission.modify:У вас нет прав, чтобы изменять warp '%warp%'.
+error.noPermission:У вас нет прав, чтобы делать это.
+error.noSuchWarp.suggestion:Warp '%warp%' не существует. Может быть вы имели в виду '§f%suggestion%§c'?
+error.noSuchWarp:Warp '%warp%' не существует.
+error.player.offline:не могу найти игрока '%player%'. Может быть он оффлайн?
+error.playerOnly:Эта команда может быть использована только игроками.
+error.private.isPrivate:Warp '%warp%' уже персональный.
+error.public.isPublic:Warp '%warp%' уже общественный.
+error.uninvite.creator:Вы не можете забрать приглашение у себя. Вы создатель!
+error.uninvite.notInvited.group:Группа '%group%' не имеет приглашения на этот warp.
+error.uninvite.notInvited.player:%player% не имеет приглашения на этот warp.
+error.warpto.noSuchWorld:Мир '%world%' не найден.
+limit.private.reached.player:§c%player% достиг максимального количества # персональных warp'ов из §e(%maxPrivate%)%n§fСкажите ему удалить некоторые из его варпов, чтобы он мог создавать новые.
+limit.private.reached:§cВы достигли максимального количества # персональных warp'ов из §e(%maxPrivate%)%n§fУдалите некоторые ваши варпы, чтобы создать новые.
+limit.public.reached.player:§c%player% достиг максимального количества # общественных warp'ов из §e(%maxPublic%)%n§fСкажите ему удалить некоторые из его варпов, чтобы он мог создавать новые.
+limit.public.reached:§cВы достигли максимального количества # общественных warp'ов из §e(%maxPublic%)%n§fУдалите некоторые ваши варпы, чтобы создать новые.
+limit.total.reached.player:§c%player% достиг максимального количества # warp'ов из §e(%maxTotal%)%n§fСкажите ему удалить некоторые из его варпов, чтобы он мог создавать новые.
+limit.total.reached:§cВы достигли максимального количества # warp'ов из §e(%maxTotal%)%n§fУдалите некоторые ваши варпы, чтобы создать новые.
+listAll.list:§6Вы можете телепортироваться на:
+lister.help.head:Помощь
+lister.noResults:Никаких результатов!
+lister.page:Страница
+lister.unknownPage:Этой страницы не существует, существует всего %pages% страниц!
+lister.warp.by:игроком
+lister.warp.head:Варпы
+lister.warp.you:Вы
+reload.config:§bКонфиг был успешно перезагружен!
+safety.found:§cWarp '%warp%' не безопасен. Вы были телепортированы в ближайшее безопасное место.
+safety.notFound:§cWarp '%warp%' не безопасен. Также нету никакого безопасного места рядом с ним.
+search.exactMatches:§eТочные совпадения: §o§7%query%
+search.noMatches:§cНет совпадений: §o§7%query%
+search.partitalMatches:§eЧастичные совпадения: §o§7%query%
+sign.created:§bWarp табличка успешно создана.
+sign.noPermission.create:§cУ вас нет прав, чтобы создавать warp таблички.
+sign.noPermission.createToWarp:§cУ вас нет прав, чтобы создавать warp таблички на warp '%warp%'.
+sign.noPermission.use:§cУ вас нет прав, чтобы использовать warp таблички.
+sign.noPermission.warpto:§cУ вас нет прав, чтобы телепортироваться на warp '%warp%'.
+timer.cooldown.cooling:§cВам нужно подождать %seconds% секунд до того, как вы сможете телепортироваться.
+timer.cooldown.ended:§bВы можете телепортироваться, используйте для телепортации §f/warp §bagain.
+timer.warmup.canceled.damage:§cВы не должны получать урон, пока не телепортируетесь. Ваш §f/warp §cбыл отменён.
+timer.warmup.canceled.move:§cВы не должны двигаться, пока не телепортируетесь. Ваш §f/warp §cбыл отменён.
+timer.warmup.started:§bВы будете телепортированы на warp '%warp%' в течении %seconds% секунд.
+timer.warmup.warming:§cВы должны подождать %seconds% секунд до того, как вы телепортируетесь.
+warp.create.private:§bУспешно создан warp '%warp%'%n§fЕсли вы хотите пригласить других игроков на него,%n§fИспользуйте: §c/warp invite <player> %warp%
+warp.create.public:§bУспешно создан warp '%warp%'%n§fЕсли вы хотите сделать его приватным,%n§fИспользуйте: §c/warp private %warp%
+warp.default.welcomeMessage:Добро пожаловать на warp '%warp%', %player%.
+warp.delete:§bВы удалили warp '%warp%'.
+warp.give.accept:§b'%warp%' теперь ваш.
+warp.give.asked:§b%player% отдаёт вам warp '%warp%'. Используйте '§f/warp accept§b' чтобы принять его.
+warp.give.given:§bВы отдаёте warp '%warp%' игроку %player%.
+warp.info.about:Информация о warp'e '%warp%':
+warp.info.created.you:(Это вы!)
+warp.info.created:Создан игроком:
+warp.info.invitedGroups:Приглашённая(ые) Группа(ы):
+warp.info.invitedPlayers:Приглашённый(е) игрок(и):
+warp.info.location.world:(в '%world%')
+warp.info.location:Локация:
+warp.info.visits:Посещения:
+warp.invite.group.private:§bВы пригласили группу %group% на warp '%warp%'.
+warp.invite.group.public:§bВы пригласили группу %group% на warp '%warp%'.%n§cНо warp '%warp%' по-прежнему является общественным.
+warp.invite.invited:§b%player% пригласил вас на warp '%warp%'.%n§fИспользуйте: §c/warp %warp% §fдля того, чтобы телепортироваться на него.
+warp.invite.player.private:§bВы пригласили игрока %player% на warp '%warp%'.
+warp.invite.player.public:§bВы пригласили игрока %player% на warp '%warp%'.%n§cНо warp '%warp%' по-прежнему является общественным.
+warp.point.reset:§bВаш компас снова указывает на точку спавна.
+warp.point:§bВаш компас теперь указывает на warp '%warp%'.
+warp.private:§bВы сделали warp '%warp%' приватным.%n§fЕсли вы хотели бы пригласить других игроков на него,%n§fИспользуйте: §c/warp invite <player> %warp%
+warp.public:§bВы сделали warp '%warp%' общественным.
+warp.uninvite.group.private:§bВы изъяли приглашение группы %group% на warp '%warp%'.
+warp.uninvite.group.public:§bВы изъяли приглашение группы %group% на warp '%warp%'.%n§cНо warp '%warp%' по-прежнему является общественным.
+warp.uninvite.player.private:§bВы изъяли приглашение игрока %player% на warp '%warp%'.
+warp.uninvite.player.public:§bВы изъяли приглашение игрока %player% на warp '%warp%'.%n§cНо warp '%warp%' по-прежнему является общественным.
+warp.uninvite.uninvited:§bВаше приглашение на warp '%warp%' было изъято. Извините.
+warp.update:§bВы обновили позиию warp'a %warp%.
+warp.warpto.player:§bТелепортация прошла успешно, %player%.
+warp.welcome.enter:§bВведите приветственное сообщение для warp'a '%warp%':
+warp.welcome.received:§bИзменить приветственное сообщение warp'a '%warp%' на:
